@@ -40,6 +40,7 @@
 
 + (void)load
 {
+    /*
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         Class class = [self class];
@@ -64,6 +65,7 @@
             method_exchangeImplementations(originalMethod, swizzledMethod);
         }
     });
+    */
 }
 
 #pragma mark - Method Swizzling
